@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RoHaxxBlocks
 {
-    public partial class Form1 : Form
+    public partial class RoHaxxBlocks : Form
     {
-        public Form1()
+        public RoHaxxBlocks()
         {
             InitializeComponent();
         }
