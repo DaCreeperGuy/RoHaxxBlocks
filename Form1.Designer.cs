@@ -1,4 +1,4 @@
-﻿
+
 namespace RoHaxxBlocks
 {
     partial class RoHaxxBlocks
@@ -41,6 +41,8 @@ namespace RoHaxxBlocks
             this.ScriptHub = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Button();
             this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.Close = new System.Windows.Forms.Button();
+            this.Minimize = new System.Windows.Forms.Button();
             this.TopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,8 @@ namespace RoHaxxBlocks
             // TopBar
             // 
             this.TopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.TopBar.Controls.Add(this.Minimize);
+            this.TopBar.Controls.Add(this.Close);
             this.TopBar.Controls.Add(this.label1);
             this.TopBar.Location = new System.Drawing.Point(0, 0);
             this.TopBar.Name = "TopBar";
@@ -166,6 +170,7 @@ namespace RoHaxxBlocks
             this.fastColoredTextBox1.CommentPrefix = "--";
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox1.ForeColor = System.Drawing.Color.White;
             this.fastColoredTextBox1.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.fastColoredTextBox1.IsReplaceMode = false;
@@ -183,6 +188,30 @@ namespace RoHaxxBlocks
             this.fastColoredTextBox1.TabIndex = 8;
             this.fastColoredTextBox1.Text = "-- Made by @DaCreeperGuy on github";
             this.fastColoredTextBox1.Zoom = 100;
+            // 
+            // Close
+            // 
+            this.Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.Close.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Close.ForeColor = System.Drawing.Color.Red;
+            this.Close.Location = new System.Drawing.Point(938, 9);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(50, 50);
+            this.Close.TabIndex = 9;
+            this.Close.Text = "✕";
+            this.Close.UseVisualStyleBackColor = false;
+            // 
+            // Minimize
+            // 
+            this.Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.Minimize.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minimize.ForeColor = System.Drawing.Color.Lime;
+            this.Minimize.Location = new System.Drawing.Point(882, 9);
+            this.Minimize.Name = "Minimize";
+            this.Minimize.Size = new System.Drawing.Size(50, 50);
+            this.Minimize.TabIndex = 10;
+            this.Minimize.Text = "🗕";
+            this.Minimize.UseVisualStyleBackColor = false;
             // 
             // RoHaxxBlocks
             // 
@@ -224,6 +253,8 @@ namespace RoHaxxBlocks
         private System.Windows.Forms.Button ScriptHub;
         private System.Windows.Forms.Button Settings;
         private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
+        private System.Windows.Forms.Button Minimize;
+        private System.Windows.Forms.Button Close;
     }
 }
 
