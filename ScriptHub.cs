@@ -8,11 +8,14 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeAreDevs_API;
 
 namespace RoHaxxBlocks
 {
+
     public partial class ScriptHub : Form
     {
+        ExploitAPI module = new ExploitAPI();
         public ScriptHub()
         {
             InitializeComponent();
@@ -45,6 +48,46 @@ namespace RoHaxxBlocks
             {
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void Arsenal_Click(object sender, EventArgs e)
+        {
+            if (module.isAPIAttached() == true)
+            {
+                WebClient wb = new WebClient();
+                string Script = wb.DownloadString("https://raw.githubusercontent.com/DaCreeperGuy/RoHaxxBlocks/master/Script/Arsenal.lua");
+                module.SendLuaScript(Script);
+            }
+        }
+
+        private void BreakingPoint_Click(object sender, EventArgs e)
+        {
+            if (module.isAPIAttached() == true)
+            {
+                WebClient wb = new WebClient();
+                string Script = wb.DownloadString("https://raw.githubusercontent.com/DaCreeperGuy/RoHaxxBlocks/master/Script/BreakingPoint.lua");
+                module.SendLuaScript(Script);
+            }
+    }
+
+        private void Bloxburg_Click(object sender, EventArgs e)
+        {
+            if (module.isAPIAttached() == true)
+            {
+                WebClient wb = new WebClient();
+                string Script = wb.DownloadString("https://raw.githubusercontent.com/DaCreeperGuy/RoHaxxBlocks/master/Script/Bloxburg.lua");
+                module.SendLuaScript(Script);
+            }
+        }
+
+        private void PrisonLife_Click(object sender, EventArgs e)
+        {
+            if (module.isAPIAttached() == true)
+            {
+                WebClient wb = new WebClient();
+                string Script = wb.DownloadString("https://raw.githubusercontent.com/DaCreeperGuy/RoHaxxBlocks/master/Script/PrisonLife.lua");
+                module.SendLuaScript(Script);
             }
         }
     }
