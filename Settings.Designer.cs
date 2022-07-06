@@ -1,9 +1,7 @@
 ﻿
-using System.Windows.Forms;
-
 namespace RoHaxxBlocks
 {
-    partial class ScriptHub
+    partial class Settings
     {
         /// <summary>
         /// Required designer variable.
@@ -31,28 +29,15 @@ namespace RoHaxxBlocks
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.TopBar = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Minimize = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.Close = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.TopBar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(482, 51);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "RoHaxxBlocks - Script Hub";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TopBar
             // 
@@ -64,8 +49,8 @@ namespace RoHaxxBlocks
             this.TopBar.Controls.Add(this.Close);
             this.TopBar.Location = new System.Drawing.Point(0, 0);
             this.TopBar.Name = "TopBar";
-            this.TopBar.Size = new System.Drawing.Size(750, 75);
-            this.TopBar.TabIndex = 2;
+            this.TopBar.Size = new System.Drawing.Size(618, 75);
+            this.TopBar.TabIndex = 3;
             this.TopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopBar_MouseDown);
             this.TopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopBar_MouseMove);
             // 
@@ -74,7 +59,7 @@ namespace RoHaxxBlocks
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.button2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(632, 9);
+            this.button2.Location = new System.Drawing.Point(500, 9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 12;
@@ -87,7 +72,7 @@ namespace RoHaxxBlocks
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(688, 9);
+            this.button1.Location = new System.Drawing.Point(556, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 11;
@@ -107,6 +92,17 @@ namespace RoHaxxBlocks
             this.Minimize.Text = "🗕";
             this.Minimize.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(439, 51);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "RoHaxxBlocks - Settings";
+            // 
             // Close
             // 
             this.Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
@@ -119,42 +115,31 @@ namespace RoHaxxBlocks
             this.Close.Text = "✕";
             this.Close.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // checkBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(150, 165);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(464, 86);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Coming Soon!";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.checkBox1.Location = new System.Drawing.Point(12, 81);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(579, 29);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "A smol test box for you to use while you wait for an update. Ok?";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(165, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(382, 25);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "While your here why not check out settings";
-            // 
-            // ScriptHub
+            // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(750, 385);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(618, 123);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.TopBar);
-            this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "ScriptHub";
-            this.Text = "Script Hub";
+            this.Name = "Settings";
+            this.Text = "Settings";
             this.TopBar.ResumeLayout(false);
             this.TopBar.PerformLayout();
             this.ResumeLayout(false);
@@ -164,19 +149,12 @@ namespace RoHaxxBlocks
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel TopBar;
-        private System.Windows.Forms.Button Minimize;
-        private new System.Windows.Forms.Button Close;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-
-        public ScriptHub(Button minimize)
-        {
-            Minimize = minimize;
-        }
-
-        private Label label2;
-        private Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Minimize;
+        private System.Windows.Forms.Label label1;
+        private new System.Windows.Forms.Button Close;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -92,5 +92,17 @@ namespace RoHaxxBlocks
                 }
             }
         }
+
+        private void ScriptHub_Click(object sender, EventArgs e)
+        {
+            ScriptHub sh = new ScriptHub();
+            sh.Show();
+        }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            Settings set = new Settings();
+            set.Show();
+        }
     }
 }
