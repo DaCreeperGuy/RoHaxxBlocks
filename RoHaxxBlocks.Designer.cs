@@ -94,9 +94,9 @@ namespace RoHaxxBlocks
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(502, 51);
+            this.label1.Size = new System.Drawing.Size(512, 51);
             this.label1.TabIndex = 1;
-            this.label1.Text = "RoHaxxBlocks - Version Dev";
+            this.label1.Text = "RoHaxxBlocks - Version  Dev";
             // 
             // Execute
             // 
@@ -168,6 +168,7 @@ namespace RoHaxxBlocks
             this.ScriptHub.TabIndex = 6;
             this.ScriptHub.Text = "Script Hub";
             this.ScriptHub.UseVisualStyleBackColor = false;
+            this.ScriptHub.Click += new System.EventHandler(this.ScriptHub_Click);
             // 
             // Settings
             // 
@@ -204,6 +205,7 @@ namespace RoHaxxBlocks
             this.fastColoredTextBox1.CommentPrefix = "--";
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.fastColoredTextBox1.ForeColor = System.Drawing.Color.White;
             this.fastColoredTextBox1.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.fastColoredTextBox1.IsReplaceMode = false;
@@ -231,7 +233,7 @@ namespace RoHaxxBlocks
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
             this.listBox1.Items.AddRange(new object[] {
-            "Script List"});
+            "Script List (Coming Soon!)"});
             this.listBox1.Location = new System.Drawing.Point(792, 86);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(196, 340);

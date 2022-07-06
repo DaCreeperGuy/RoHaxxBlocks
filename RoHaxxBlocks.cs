@@ -92,5 +92,10 @@ namespace RoHaxxBlocks
                 }
             }
         }
+
+        private void ScriptHub_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -4,25 +4,19 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RoHaxxBlocks
 {
-    public partial class ScriptHub : Form
+    public partial class Settings : Form
     {
-        public ScriptHub()
+        public Settings()
         {
             InitializeComponent();
         }
         Point lastPoint;
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;

@@ -1,9 +1,7 @@
 ﻿
-using System.Windows.Forms;
-
 namespace RoHaxxBlocks
 {
-    partial class ScriptHub
+    partial class Settings
     {
         /// <summary>
         /// Required designer variable.
@@ -31,27 +29,15 @@ namespace RoHaxxBlocks
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.TopBar = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Minimize = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.Close = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.TopBar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(482, 51);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "RoHaxxBlocks - Script Hub";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TopBar
             // 
@@ -64,7 +50,7 @@ namespace RoHaxxBlocks
             this.TopBar.Location = new System.Drawing.Point(0, 0);
             this.TopBar.Name = "TopBar";
             this.TopBar.Size = new System.Drawing.Size(750, 75);
-            this.TopBar.TabIndex = 2;
+            this.TopBar.TabIndex = 3;
             this.TopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopBar_MouseDown);
             this.TopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopBar_MouseMove);
             // 
@@ -106,6 +92,17 @@ namespace RoHaxxBlocks
             this.Minimize.Text = "🗕";
             this.Minimize.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(439, 51);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "RoHaxxBlocks - Settings";
+            // 
             // Close
             // 
             this.Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
@@ -126,23 +123,23 @@ namespace RoHaxxBlocks
             this.label2.Location = new System.Drawing.Point(150, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(464, 86);
-            this.label2.TabIndex = 13;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Coming Soon!";
             // 
-            // ScriptHub
+            // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(750, 385);
-            this.Controls.Add(this.TopBar);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.TopBar);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "ScriptHub";
-            this.Text = "Script Hub";
+            this.Name = "Settings";
+            this.Text = "Settings";
             this.TopBar.ResumeLayout(false);
             this.TopBar.PerformLayout();
             this.ResumeLayout(false);
@@ -152,18 +149,12 @@ namespace RoHaxxBlocks
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel TopBar;
-        private System.Windows.Forms.Button Minimize;
-        private new System.Windows.Forms.Button Close;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-
-        public ScriptHub(Button minimize)
-        {
-            Minimize = minimize;
-        }
-
-        private Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Minimize;
+        private System.Windows.Forms.Label label1;
+        private new System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Label label2;
     }
 }

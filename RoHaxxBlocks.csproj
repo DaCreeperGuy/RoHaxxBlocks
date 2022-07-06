@@ -66,6 +66,12 @@
     <Compile Include="ScriptHub.Designer.cs">
       <DependentUpon>ScriptHub.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="RoHaxxBlocks.resx">
       <DependentUpon>RoHaxxBlocks.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="ScriptHub.resx">
       <DependentUpon>ScriptHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
