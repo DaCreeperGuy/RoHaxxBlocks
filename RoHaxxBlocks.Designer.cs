@@ -40,10 +40,7 @@ namespace RoHaxxBlocks
             this.OpenFile = new System.Windows.Forms.Button();
             this.SaveFile = new System.Windows.Forms.Button();
             this.Inject = new System.Windows.Forms.Button();
-            this.ScriptHub = new System.Windows.Forms.Button();
-            this.Settings = new System.Windows.Forms.Button();
             this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.TopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).BeginInit();
             this.SuspendLayout();
@@ -94,9 +91,9 @@ namespace RoHaxxBlocks
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(502, 51);
+            this.label1.Size = new System.Drawing.Size(511, 51);
             this.label1.TabIndex = 1;
-            this.label1.Text = "RoHaxxBlocks - Version Dev";
+            this.label1.Text = "RoHaxxBlocks - Version 1.0.0";
             // 
             // Execute
             // 
@@ -104,7 +101,7 @@ namespace RoHaxxBlocks
             this.Execute.ForeColor = System.Drawing.SystemColors.Control;
             this.Execute.Location = new System.Drawing.Point(12, 438);
             this.Execute.Name = "Execute";
-            this.Execute.Size = new System.Drawing.Size(150, 50);
+            this.Execute.Size = new System.Drawing.Size(250, 50);
             this.Execute.TabIndex = 1;
             this.Execute.Text = "Execute";
             this.Execute.UseVisualStyleBackColor = false;
@@ -114,7 +111,7 @@ namespace RoHaxxBlocks
             // 
             this.Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.Clear.ForeColor = System.Drawing.SystemColors.Control;
-            this.Clear.Location = new System.Drawing.Point(168, 438);
+            this.Clear.Location = new System.Drawing.Point(838, 438);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(150, 50);
             this.Clear.TabIndex = 2;
@@ -126,7 +123,7 @@ namespace RoHaxxBlocks
             // 
             this.OpenFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.OpenFile.ForeColor = System.Drawing.SystemColors.Control;
-            this.OpenFile.Location = new System.Drawing.Point(324, 438);
+            this.OpenFile.Location = new System.Drawing.Point(682, 438);
             this.OpenFile.Name = "OpenFile";
             this.OpenFile.Size = new System.Drawing.Size(150, 50);
             this.OpenFile.TabIndex = 3;
@@ -138,7 +135,7 @@ namespace RoHaxxBlocks
             // 
             this.SaveFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.SaveFile.ForeColor = System.Drawing.SystemColors.Control;
-            this.SaveFile.Location = new System.Drawing.Point(480, 438);
+            this.SaveFile.Location = new System.Drawing.Point(526, 438);
             this.SaveFile.Name = "SaveFile";
             this.SaveFile.Size = new System.Drawing.Size(150, 50);
             this.SaveFile.TabIndex = 4;
@@ -150,36 +147,13 @@ namespace RoHaxxBlocks
             // 
             this.Inject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.Inject.ForeColor = System.Drawing.SystemColors.Control;
-            this.Inject.Location = new System.Drawing.Point(636, 438);
+            this.Inject.Location = new System.Drawing.Point(268, 438);
             this.Inject.Name = "Inject";
-            this.Inject.Size = new System.Drawing.Size(150, 50);
+            this.Inject.Size = new System.Drawing.Size(250, 50);
             this.Inject.TabIndex = 5;
             this.Inject.Text = "Inject";
             this.Inject.UseVisualStyleBackColor = false;
             this.Inject.Click += new System.EventHandler(this.Inject_Click);
-            // 
-            // ScriptHub
-            // 
-            this.ScriptHub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ScriptHub.ForeColor = System.Drawing.SystemColors.Control;
-            this.ScriptHub.Location = new System.Drawing.Point(792, 438);
-            this.ScriptHub.Name = "ScriptHub";
-            this.ScriptHub.Size = new System.Drawing.Size(150, 50);
-            this.ScriptHub.TabIndex = 6;
-            this.ScriptHub.Text = "Script Hub";
-            this.ScriptHub.UseVisualStyleBackColor = false;
-            // 
-            // Settings
-            // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.Settings.ForeColor = System.Drawing.SystemColors.Control;
-            this.Settings.Location = new System.Drawing.Point(948, 438);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(40, 50);
-            this.Settings.TabIndex = 7;
-            this.Settings.Text = "⚙️";
-            this.Settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Settings.UseVisualStyleBackColor = false;
             // 
             // fastColoredTextBox1
             // 
@@ -195,7 +169,7 @@ namespace RoHaxxBlocks
         '\'',
         '\''};
             this.fastColoredTextBox1.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>.+)\r\n";
-            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(299, 14);
+            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(403, 42);
             this.fastColoredTextBox1.BackBrush = null;
             this.fastColoredTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fastColoredTextBox1.BracketsHighlightStrategy = FastColoredTextBoxNS.BracketsHighlightStrategy.Strategy2;
@@ -217,26 +191,11 @@ namespace RoHaxxBlocks
             this.fastColoredTextBox1.RightBracket2 = '}';
             this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
-            this.fastColoredTextBox1.Size = new System.Drawing.Size(774, 340);
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(976, 340);
             this.fastColoredTextBox1.TabIndex = 8;
-            this.fastColoredTextBox1.Text = "-- Made by @DaCreeperGuy on github";
+            this.fastColoredTextBox1.Text = "-- Made by @DaCreeperGuy on github\r\n-- https://github.com/DaCreeperGuy/RoHaxxBloc" +
+    "ks\r\n-- You are useing the version 1.0.0";
             this.fastColoredTextBox1.Zoom = 100;
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 17;
-            this.listBox1.Items.AddRange(new object[] {
-            "Script List"});
-            this.listBox1.Location = new System.Drawing.Point(792, 86);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(196, 340);
-            this.listBox1.TabIndex = 9;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // RoHaxxBlocks
             // 
@@ -244,10 +203,7 @@ namespace RoHaxxBlocks
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.fastColoredTextBox1);
-            this.Controls.Add(this.Settings);
-            this.Controls.Add(this.ScriptHub);
             this.Controls.Add(this.Inject);
             this.Controls.Add(this.SaveFile);
             this.Controls.Add(this.OpenFile);
@@ -277,12 +233,9 @@ namespace RoHaxxBlocks
         private System.Windows.Forms.Button OpenFile;
         private System.Windows.Forms.Button SaveFile;
         private System.Windows.Forms.Button Inject;
-        private System.Windows.Forms.Button ScriptHub;
-        private System.Windows.Forms.Button Settings;
         private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
         private System.Windows.Forms.Button Minimize;
         private new System.Windows.Forms.Button Close;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
