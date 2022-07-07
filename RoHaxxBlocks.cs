@@ -19,6 +19,7 @@ namespace RoHaxxBlocks
         {
             InitializeComponent();
         }
+
         Point lastPoint;
         private void RoHaxxBlocks_Load(object sender, EventArgs e)
         {
@@ -42,8 +43,11 @@ namespace RoHaxxBlocks
 
         private void Execute_Click(object sender, EventArgs e)
         {
-            module.SendLuaScript(fastColoredTextBox1.Text);
-            module.SendLuaCScript(fastColoredTextBox1.Text);
+            if (module.isAPIAttached() == true)
+            {
+                module.SendLuaScript(fastColoredTextBox1.Text);
+                module.SendLuaCScript(fastColoredTextBox1.Text);
+            }
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -91,6 +95,18 @@ namespace RoHaxxBlocks
                     sw.Write(fastColoredTextBox1.Text);
                 }
             }
+        }
+
+        private void ScriptHub_Click(object sender, EventArgs e)
+        {
+            ScriptHub sh = new ScriptHub();
+            sh.Show();
+        }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            Settings set = new Settings();
+            set.Show();
         }
     }
 }
